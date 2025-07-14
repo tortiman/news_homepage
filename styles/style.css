@@ -1,0 +1,163 @@
+:root{
+    --SoftPrimaryorange: hsl(35, 77%, 62%);
+    --SoftPrimaryred: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --GrayishNeutralblue: hsl(233, 8%, 79%);
+    --DarkNeutralgrayishblue: hsl(236, 13%, 42%);
+    --VeryNeutraldarkblue: hsl(240, 100%, 5%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+main{
+    width: 21.44em;
+    padding: 12px 8px 45px 8px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    height: 1.3em;
+}
+
+h1{
+
+    font-size: 3em;
+    font-weight: 800;
+}
+
+p{
+    font-size: 0.9375em;
+    line-height: 1.5;
+}
+
+nav{
+    display: none;
+}
+
+.principal-new{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+    padding-top: 1em;
+    height: 40%;
+}
+
+.image-principal{
+    height: 50%;
+    object-fit: cover;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.paragragh-button{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+    width: 100%;
+}
+
+button{
+    width: 50%;
+    background-color: var(--SoftPrimaryred);
+    border: none;
+    height: 2.5rem;
+    font-size: 0.8em;
+    letter-spacing: 0.3em;
+    font-weight: 800;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: var(--VeryNeutraldarkblue);
+    color: var(--Off-white);
+    /* height: 33%; */
+    margin-top: 2em;
+    padding: 1.3em 1.3em    ;
+    justify-content: start;
+}
+
+h3{
+    font-size: 2em;
+    color: var(--SoftPrimaryorange);
+}
+
+.news article{
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+    gap: 0.5em;
+}
+
+.news article:nth-child(3){
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-top: 1px solid var(--DarkNeutralgrayishblue);
+    border-bottom: 1px solid var(--DarkNeutralgrayishblue);
+}
+
+h4{
+    font-size: 1.3em;
+}
+
+.news article p{
+    color: var(--DarkNeutralgrayishblue);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    gap: 2em;
+}
+
+.img-article{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.img-article img{
+    width: 33%;
+}
+
+.news-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+span{
+    color: var(--SoftPrimaryred);
+    font-size: 2em;
+    font-weight: 800;
+}
+
+h5{
+    font-size: 1.1em;
+}
