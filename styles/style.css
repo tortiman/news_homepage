@@ -63,13 +63,13 @@ nav{
 }
 
 .image-principal{
-    height: 50%;
+    height: 300px;
     object-fit: cover;
 }
 
 h2{
     font-size: 3em;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .paragragh-button{
@@ -126,7 +126,7 @@ h4{
 }
 
 .news article p{
-    color: var(--DarkNeutralgrayishblue);
+    color: var(--GrayishNeutralblue);
 }
 
 footer{
@@ -160,4 +160,109 @@ span{
 
 h5{
     font-size: 1.1em;
+    font-weight: 800;
+}
+
+@media (min-width:48em){
+    main{
+        width: 60.74em;
+        padding-top: 4.8em;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    header img{
+        display: none;
+    }
+
+    nav{
+        display: block;
+        width: 40%;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        font-size: 0.9em;
+    }
+
+    .main-news{
+        display: flex;
+        flex-direction: row;
+        width: 60.94em;
+        gap: 1.5625em;
+        height: 28.125em;
+        padding-top: 3em;
+    }
+
+    .new-body-principal{
+        display: flex;
+        flex-direction: row;
+        gap: 5.125em;
+        padding-top: 0.625em;
+    }
+
+    .image-principal{
+        width: 40em;
+        height: 16.5625em;
+    }
+   
+    .principal-new{
+        padding: 0;
+        width: 66%;
+    }
+
+    
+    .paragragh-button{
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .news{
+        margin: 0;
+        width: 33%;
+        height: 25.525em        ;
+    }
+    
+    h4{
+        font-size: 1.1em;
+    }
+
+    p{
+        font-size: 0.8em;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+
+    h5{
+        font-size: 0.9em;
+    }
+
+    span{
+        font-size: 1.7em;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
+
+    .img-article{
+        height: 100%;
+    }
+
+    .img-article p{
+        line-height: 1.5;
+    }
+
+    .img-article img{
+        height: 6.785em;
+    }
+    .news-footer{
+        gap: 0.7em;
+    }
 }
