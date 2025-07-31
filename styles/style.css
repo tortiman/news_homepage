@@ -21,12 +21,13 @@ body{
     justify-content: start;
     align-items: center;
     height: 100vh;
-    
+
 }
 
 main{
     width: 21.44em;
     padding: 12px 8px 45px 8px;
+    position: relative;
 }
 
 header{
@@ -37,6 +38,11 @@ header{
 
 header img{
     height: 1.3em;
+    content: url('/assets/images/icon-menu.svg');
+}
+
+header img.open{
+    content: url('/assets/images/icon-menu-close.svg');
 }
 
 h1{
@@ -50,8 +56,43 @@ p{
     line-height: 1.5;
 }
 
-nav{
-    display: none;
+.menu-mobile{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--Off-white);
+    width: 16em;
+}
+
+.menu-mobile.open{
+    visibility: visible;
+}
+
+.list{
+    position: relative;
+    top: 150px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    height: 100vh;
+    gap: 20px;
+    font-size: 20px;
+
+}
+
+.list li:hover{
+        color: var(--SoftPrimaryorange);
+    }
+
+.list li{
+        cursor: pointer;
+    }
+
+
+#icon-menu{
+    z-index: 1;
 }
 
 .principal-new{
@@ -84,9 +125,15 @@ button{
     background-color: var(--SoftPrimaryred);
     border: none;
     height: 2.5rem;
-    font-size: 0.8em;
+    font-size: 0.7em;
     letter-spacing: 0.3em;
-    font-weight: 800;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--VeryNeutraldarkblue);
+    color:var(--Off-white);
 }
 
 .news{
@@ -110,7 +157,7 @@ h3{
     height: 33%;
     display: flex;
     flex-direction: column;
-    align-items: start; 
+    align-items: start;
     gap: 0.5em;
 }
 
@@ -123,6 +170,11 @@ h3{
 
 h4{
     font-size: 1.3em;
+    cursor: pointer;
+}
+
+h4:hover{
+    color: var(--SoftPrimaryorange);
 }
 
 .news article p{
@@ -161,33 +213,60 @@ span{
 h5{
     font-size: 1.1em;
     font-weight: 800;
+    cursor: pointer;
+
+}
+
+h5:hover{
+    color: var(--SoftPrimaryred);
 }
 
 @media (min-width:48em){
+   
     main{
-        width: 60.74em;
+        width: 40em;
         padding-top: 4.8em;
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 0;
     }
 
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
     header img{
         display: none;
     }
 
-    nav{
-        display: block;
+    header .menu-mobile{
+        visibility: visible;
+        display: block; 
         width: 40%;
+        position: unset;
+        align-items: center;
     }
 
-    ul{
+    
+    .list{
+        position: unset;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         list-style-type: none;
         font-size: 0.9em;
+        height: 40px;
     }
+
+    .list li{
+        align-content: center;
+        
+    }
+
+    
 
     .main-news{
         display: flex;
@@ -209,13 +288,13 @@ h5{
         width: 40em;
         height: 16.5625em;
     }
-   
+
     .principal-new{
         padding: 0;
         width: 66%;
     }
 
-    
+
     .paragragh-button{
         justify-content: space-around;
         gap: 0;
@@ -224,9 +303,133 @@ h5{
     .news{
         margin: 0;
         width: 33%;
-        height: 25.525em        ;
+        height: 25.525em;
     }
+
+    h4{
+        font-size: 1.1em;
+    }
+
+    p{
+        font-size: 0.8em;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+
+    h5{
+        font-size: 0.9em;
+    }
+
+    span{
+        font-size: 1.7em;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
+
+    .img-article{
+        height: 100%;
+    }
+
+    .img-article p{
+        line-height: 1.5;
+    }
+
+    .img-article img{
+        height: 6.785em;
+    }
+    .news-footer{
+        gap: 0.7em;
+    }
+}
+
+@media (min-width:90em){
+    main{
+        width: 60.74em;
+        padding-top: 4.8em;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    header img{
+        display: none;
+    }
+
+    header .menu-mobile{
+        visibility: visible;
+        display: block; 
+        width: 40%;
+        position: unset;
+        align-items: center;
+    }
+
     
+    .list{
+        position: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        font-size: 0.9em;
+        height: 40px;
+    }
+
+    .list li{
+        align-content: center;
+        
+    }
+
+    
+
+    .main-news{
+        display: flex;
+        flex-direction: row;
+        width: 60.94em;
+        gap: 1.5625em;
+        height: 28.125em;
+        padding-top: 3em;
+    }
+
+    .new-body-principal{
+        display: flex;
+        flex-direction: row;
+        gap: 5.125em;
+        padding-top: 0.625em;
+    }
+
+    .image-principal{
+        width: 40em;
+        height: 16.5625em;
+    }
+
+    .principal-new{
+        padding: 0;
+        width: 66%;
+    }
+
+
+    .paragragh-button{
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .news{
+        margin: 0;
+        width: 33%;
+        height: 25.525em;
+    }
+
     h4{
         font-size: 1.1em;
     }
