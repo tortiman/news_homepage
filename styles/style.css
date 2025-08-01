@@ -36,12 +36,12 @@ header{
     align-items: center;
 }
 
-header img{
+header .hamburguer-button{
     height: 1.3em;
     content: url('/assets/images/icon-menu.svg');
 }
 
-header img.open{
+header .hamburguer-button.open{
     content: url('/assets/images/icon-menu-close.svg');
 }
 
@@ -238,7 +238,7 @@ h5:hover{
         flex-direction: row;
     }
 
-    header img{
+    header .hamburguer-button{
         display: none;
     }
 
@@ -374,7 +374,7 @@ h5:hover{
         flex-direction: row;
     }
 
-    header img{
+    header .hamburguer-button{
         display: none;
     }
 
