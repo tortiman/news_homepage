@@ -245,7 +245,7 @@ h5:hover{
     header .menu-mobile{
         visibility: visible;
         display: block; 
-        width: 40%;
+        width: 55%;
         position: unset;
         align-items: center;
     }
@@ -271,7 +271,7 @@ h5:hover{
     .main-news{
         display: flex;
         flex-direction: row;
-        width: 60.94em;
+        width: 50em;
         gap: 1.5625em;
         height: 28.125em;
         padding-top: 3em;
@@ -280,38 +280,50 @@ h5:hover{
     .new-body-principal{
         display: flex;
         flex-direction: row;
-        gap: 5.125em;
+        gap: 1em;
         padding-top: 0.625em;
     }
 
+    h2{
+        font-size: 3em;
+    }
+
     .image-principal{
-        width: 40em;
+        width: 25em;
         height: 16.5625em;
     }
 
     .principal-new{
         padding: 0;
-        width: 66%;
+        width:50%;
     }
 
 
-    .paragragh-button{
+    .paragragh-button{  
         justify-content: space-around;
-        gap: 0;
+        gap: 4em;
+    }
+
+    button{
+        width: 80%;
     }
 
     .news{
         margin: 0;
-        width: 33%;
+        width: 23%;
         height: 25.525em;
     }
 
+    h3{
+        font-size: 1.5em;
+    }
+
     h4{
-        font-size: 1.1em;
+        font-size: 0.8em;
     }
 
     p{
-        font-size: 0.8em;
+        font-size: 0.75em;
     }
 
     footer{
@@ -319,15 +331,15 @@ h5:hover{
     }
 
     h5{
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     span{
-        font-size: 1.7em;
+        font-size: 1.2em;
     }
 
     footer p{
-        font-size: 13px;
+        font-size: 0.625em;
     }
 
     .img-article{
